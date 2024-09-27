@@ -6,8 +6,11 @@ function App() {
   return (
     <div className="card">
       <h1 id='points' className="text-white">Score: {score}</h1>
+
       <Ballon score={score} setScore={setScore} />
+
       <Ballon score={score} setScore={setScore} />
+
       <div className="another-section">
         <Ballon score={score} setScore={setScore} />
       </div>
