@@ -2,10 +2,10 @@ import { useState } from 'react';
 import Ballon from './Ballon';
 
 function App() {
-  const [score, setScore] = useState(10);
+  const [score, setScore] = useState(0);
   return (
     <div className="card">
-      <h1 className="text-white">Score: {score}</h1>
+      <h1 id='points' className="text-white">Score: {score}</h1>
       <Ballon score={score} setScore={setScore}/>
       <Ballon score={score} setScore={setScore} />
       <div className="another-section">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Data from '../data/Data';
 
 const Card = ({ setShowCard, setShowButton, score, setScore }) => {
     const [isDisabled, setIsDisabled] = useState(false);

@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Qui a remporté la Coupe du Monde de la FIFA en 2018 ?",
+        "options": ["France", "Croatie", "Brésil"],
+        "correct_answer": "France"
+    },
+    {
+        "question": "Quel joueur a le plus de buts marqué ?",
+        "options": ["Lionel Messi", "Cristiano Ronaldo", "Michel Platini"],
+        "correct_answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Quel pays a remporté le plus de Coupes du Monde de la FIFA ?",
+        "options": ["Brésil", "Allemagne", "Italie"],
+        "correct_answer": "Brésil"
+    }
+]

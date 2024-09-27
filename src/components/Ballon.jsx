@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Card from './Card';
 
 
-const Ballon = ({ score, setScore }) => {
+    const Ballon = ({ score, setScore }) => {
     const [showCard, setShowCard] = useState(false);
     const [showButton, setShowButton] = useState(true);
 
@@ -12,7 +12,7 @@ const Ballon = ({ score, setScore }) => {
                 <>
                     <button
                         onClick={() => setShowCard(false)}
-                        className="bg-red-60    0 text-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition duration-300 transform hover:scale-105 w-10 h-10 flex items-center justify-center"
+                        className="bg-red-600 text-white font-bold py-2 px-4 rounded-full shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 transition duration-300 transform hover:scale-105 w-10 h-10 flex items-center justify-center"
                     >
                         X
                     </button>
