@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import Data from '../data/data.json';
 
-const Card = ({ setShowCard, setShowButton, score, setScore }) => {
+const Card = ({ setShowCard, setShowButton, score, setScore, data, setData }) => {
     const [isDisabled, setIsDisabled] = useState(false);
     const [answer, setAnswer] = useState("");
     const [currentQuestion, setCurrentQuestion] = useState(null);
 
     useEffect(() => {
-        const shuffledQuestions = Data.sort(() => Math.random() - 0.5);
-        setCurrentQuestion(shuffledQuestions[0]);
+            const shuffledQuestions = [...data].sort(() => Math.random() - 0.5);
+            setCurrentQuestion(shuffledQuestions[0]);
+            const remainingQuestions = data.filter((question) => question !== shuffledQuestions[0]);
+            setData(remainingQuestions);
     }, []);
 
     const verify = (selectedAnswer) => {
@@ -22,7 +23,7 @@ const Card = ({ setShowCard, setShowButton, score, setScore }) => {
         }
         setTimeout(() => {
             setShowCard(false);
-            setIsDisabled(false);
+            setIsDisabled(true);
         }, 2000);
     }
 
@@ -47,9 +48,6 @@ const Card = ({ setShowCard, setShowButton, score, setScore }) => {
                             </div>
                         </>
                     )}
-                    <h1 className="pt-6 text-center text-lg text-[#374151]">
-                        {score}
-                    </h1>
                     <h2 className="pt-6 text-center text-lg text-[#374151]">
                         {answer}
                     </h2>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Card from './Card';
 
 
-    const Ballon = ({ score, setScore }) => {
+    const Ballon = ({ score, setScore,data, setData }) => {
     const [showCard, setShowCard] = useState(false);
     const [showButton, setShowButton] = useState(true);
 
@@ -16,7 +16,7 @@ import Card from './Card';
                     >
                         X
                     </button>
-                    <Card setShowCard={setShowCard} setShowButton={setShowButton} score={score} setScore={setScore} />
+                    <Card setShowCard={setShowCard} setShowButton={setShowButton} score={score} setScore={setScore} data={data} setData={setData} />
                 </>
             ) : (
                 showButton && (
