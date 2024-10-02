@@ -6,15 +6,17 @@ function App() {
   return (
     <div className="card">
       <h1 id='points' className="text-white">Score: {score}</h1>
-      <Ballon score={score} id="worldcup" setScore={setScore} />
       <Ballon score={score} setScore={setScore} />
-      <div className="another-section">
-        <Ballon score={score} setScore={setScore} />
-      </div>
-
-      <div className="yet-another-section">
-        <Ballon score={score} setScore={setScore} />
-      </div>
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
+      <Ballon score={score} setScore={setScore} />
     </div>
   );
 }

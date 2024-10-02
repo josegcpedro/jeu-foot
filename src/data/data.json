@@ -1,17 +1,52 @@
-{
-    "worldcup": {
+[
+    {
         "question": "Qui a remporté la Coupe du Monde de la FIFA en 2018 ?",
-        "options": ["France", "Croatie", "Brésil"],
+        "options": ["Brésil", "Croatie", "France"],
         "correct_answer": "France"
     },
-    "players": {
+    {
         "question": "Quel joueur a le plus de buts marqué ?",
         "options": ["Lionel Messi", "Cristiano Ronaldo", "Michel Platini"],
         "correct_answer": "Cristiano Ronaldo"
     },
-    "fifa": {
+    {
+        "question": "Quel à été le premier club à remporter la ligue des champions?",
+        "options": ["Real Madrid", "Manchester United", "Benfica"],
+        "correct_answer": "Real Madrid"
+    },
+    {
         "question": "Quel pays a remporté le plus de Coupes du Monde de la FIFA ?",
         "options": ["Brésil", "Allemagne", "Italie"],
         "correct_answer": "Brésil"
+    },
+    {
+        "question": "Qui est le joueur le plus capé de l'histoire du football ?",
+        "options": ["Cristiano Ronaldo", "Sergio Ramos", "Gianluigi Buffon"],
+        "correct_answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Quel club a remporté le plus de titres de Ligue des Champions ?",
+        "options": ["Real Madrid", "AC Milan", "Liverpool"],
+        "correct_answer": "Real Madrid"
+    },
+    {
+        "question": "Qui a remporté le Ballon d'Or en 2015 ?",
+        "options": ["Lionel Messi", "Robert Lewandowski", "Cristiano Ronaldo"],
+        "correct_answer": "Lionel Messi"
+    },
+    {
+        "question": "Quel joueur a marqué le plus de buts en une seule saison de Ligue des Champions ?",
+        "options": ["Cristiano Ronaldo", "Lionel Messi", "Robert Lewandowski"],
+        "correct_answer": "Cristiano Ronaldo"
+    },
+    {
+        "question": "Quel pays a remporté l'Euro 2020 ?",
+        "options": ["Italie", "Angleterre", "Espagne"],
+        "correct_answer": "Italie"
+    },
+    {
+        "question": "Quel joueur détient le record du plus grand nombre de buts en Coupe du Monde ?",
+        "options": ["Miroslav Klose", "Ronaldo", "Gerd Müller"],
+        "correct_answer": "Miroslav Klose"
     }
-}
+]
