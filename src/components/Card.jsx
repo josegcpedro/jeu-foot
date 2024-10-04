@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
-const Card = ({ setShowCard, setShowButton, score, setScore, data, setData }) => {
+const Card = ({ setShowCard, setShowButton, score, setScore, questions, setQuestions }) => {
     const [isDisabled, setIsDisabled] = useState(false);
     const [answer, setAnswer] = useState("");
     const [currentQuestion, setCurrentQuestion] = useState(null);
 
     useEffect(() => {
-            const shuffledQuestions = [...data].sort(() => Math.random() - 0.5);
+            const shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
             setCurrentQuestion(shuffledQuestions[0]);
-            const remainingQuestions = data.filter((question) => question !== shuffledQuestions[0]);
-            setData(remainingQuestions);
+            const remainingQuestions = questions.filter((question) => question !== shuffledQuestions[0]);
+            setQuestions(remainingQuestions);
     }, []);
 
     const verify = (selectedAnswer) => {
